@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using QandA.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,6 +40,7 @@ namespace QandA
                 upgrader.PerformUpgrade();
             }
             services.AddControllers();
+            services.AddScoped<IDataRepository, DataRepository>();
             
         }
 

@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\A240940\\Desktop\\Practice\\QandA\\QandA\\QandA\\QandA.csproj": {}
+    "C:\\Users\\ASUS\\Dropbox\\My PC (DESKTOP-KDLEN81)\\Documents\\code\\c#\\Api\\QandA\\QandA_with_Dapper\\QandA\\QandA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\A240940\\Desktop\\Practice\\QandA\\QandA\\QandA\\QandA.csproj": {
+    "C:\\Users\\ASUS\\Dropbox\\My PC (DESKTOP-KDLEN81)\\Documents\\code\\c#\\Api\\QandA\\QandA_with_Dapper\\QandA\\QandA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\A240940\\Desktop\\Practice\\QandA\\QandA\\QandA\\QandA.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Dropbox\\My PC (DESKTOP-KDLEN81)\\Documents\\code\\c#\\Api\\QandA\\QandA_with_Dapper\\QandA\\QandA.csproj",
         "projectName": "QandA",
-        "projectPath": "C:\\Users\\A240940\\Desktop\\Practice\\QandA\\QandA\\QandA\\QandA.csproj",
-        "packagesPath": "C:\\Users\\A240940\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\A240940\\Desktop\\Practice\\QandA\\QandA\\QandA\\obj\\",
+        "projectPath": "C:\\Users\\ASUS\\Dropbox\\My PC (DESKTOP-KDLEN81)\\Documents\\code\\c#\\Api\\QandA\\QandA_with_Dapper\\QandA\\QandA.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\Dropbox\\My PC (DESKTOP-KDLEN81)\\Documents\\code\\c#\\Api\\QandA\\QandA_with_Dapper\\QandA\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\A240940\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,8 +25,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://stanbicibtcdev.pkgs.visualstudio.com/_packaging/com.stanbicibtc.dotnet.feed%40Local/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -44,10 +46,6 @@
             "Dapper": {
               "target": "Package",
               "version": "[2.0.78, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.8.2, )"
             },
             "dbup": {
               "target": "Package",
@@ -72,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

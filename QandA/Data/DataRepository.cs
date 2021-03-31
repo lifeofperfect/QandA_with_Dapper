@@ -2,11 +2,8 @@
 using Microsoft.Extensions.Configuration;
 using QandA.Data.Models.APIRequest;
 using QandA.Data.Models.APIResponse;
-using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace QandA.Data
 {
@@ -21,6 +18,7 @@ namespace QandA.Data
 
         public void DeleteQuestion(int questionId)
         {
+            
             using(var connection = new SqlConnection(_connectionString))
             {
                 connection.Open();
@@ -93,7 +91,7 @@ namespace QandA.Data
             }
         }
 
-        public AnswerGetResponse PostAnswer(AnswerPostRequest answer)
+        public AnswerGetResponse PostAnswer(AnswerPostFullRequest answer)
         {
             using (var connection  = new SqlConnection(_connectionString))
             {
@@ -106,7 +104,7 @@ namespace QandA.Data
             }
         }
 
-        public QuestionGetSingleResponse PostQuestion(QuestionPostRequest question)
+        public QuestionGetSingleResponse PostQuestion(QuestionPostFullRequest question)
         {
             using(var connection = new SqlConnection(_connectionString))
             {
