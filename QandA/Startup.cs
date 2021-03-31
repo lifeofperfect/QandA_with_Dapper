@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using QandA.Data;
+using QandA.Hubs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -41,6 +42,7 @@ namespace QandA
             }
             services.AddControllers();
             services.AddScoped<IDataRepository, DataRepository>();
+            services.AddSignalR();
             
         }
 
@@ -61,6 +63,7 @@ namespace QandA
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<QuestionHubs>("/questionshub");
             });
         }
     }

@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using QandA.Data;
 using QandA.Data.Models.APIRequest;
 using QandA.Data.Models.APIResponse;
+using QandA.Hubs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,10 +17,12 @@ namespace QandA.Controllers
     public class QuestionsController : ControllerBase
     {
         private readonly IDataRepository _dataRepository;
+        private readonly IHubContext<QuestionHubs> _questionHubContext;
 
-        public QuestionsController(IDataRepository dataRepository)
+        public QuestionsController(IDataRepository dataRepository, IHubContext<QuestionHubs> questionHubContext)
         {
             _dataRepository = dataRepository;
+            _questionHubContext = questionHubContext;
         }
 
         [HttpGet]
@@ -108,6 +112,9 @@ namespace QandA.Controllers
                 UserName = "bob.text@test.com",
                 Created = DateTime.UtcNow
             });
+
+            _questionHubContext.Clients.Group($"Question-{answerPostRequest.QuestionId.Value}")
+                .SendAsync("RecieveQuestion", _dataRepository.GetQuestion(answerPostRequest.QuestionId.Value));
 
             return savedAnswer;
         }
