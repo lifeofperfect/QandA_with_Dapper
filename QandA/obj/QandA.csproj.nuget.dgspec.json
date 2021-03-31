@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Dropbox\\My PC (DESKTOP-KDLEN81)\\Documents\\code\\c#\\Api\\QandA\\QandA_with_Dapper\\QandA\\QandA.csproj": {}
+    "C:\\Users\\ASUS\\Dropbox\\My PC (DESKTOP-KDLEN81)\\Documents\\code\\c#\\Api\\realQA\\QandA_with_Dapper\\QandA\\QandA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Dropbox\\My PC (DESKTOP-KDLEN81)\\Documents\\code\\c#\\Api\\QandA\\QandA_with_Dapper\\QandA\\QandA.csproj": {
+    "C:\\Users\\ASUS\\Dropbox\\My PC (DESKTOP-KDLEN81)\\Documents\\code\\c#\\Api\\realQA\\QandA_with_Dapper\\QandA\\QandA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Dropbox\\My PC (DESKTOP-KDLEN81)\\Documents\\code\\c#\\Api\\QandA\\QandA_with_Dapper\\QandA\\QandA.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Dropbox\\My PC (DESKTOP-KDLEN81)\\Documents\\code\\c#\\Api\\realQA\\QandA_with_Dapper\\QandA\\QandA.csproj",
         "projectName": "QandA",
-        "projectPath": "C:\\Users\\ASUS\\Dropbox\\My PC (DESKTOP-KDLEN81)\\Documents\\code\\c#\\Api\\QandA\\QandA_with_Dapper\\QandA\\QandA.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Dropbox\\My PC (DESKTOP-KDLEN81)\\Documents\\code\\c#\\Api\\realQA\\QandA_with_Dapper\\QandA\\QandA.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Dropbox\\My PC (DESKTOP-KDLEN81)\\Documents\\code\\c#\\Api\\QandA\\QandA_with_Dapper\\QandA\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Dropbox\\My PC (DESKTOP-KDLEN81)\\Documents\\code\\c#\\Api\\realQA\\QandA_with_Dapper\\QandA\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
