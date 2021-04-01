@@ -42,7 +42,17 @@ namespace QandA
             }
             services.AddControllers();
             services.AddScoped<IDataRepository, DataRepository>();
+
+            services.AddCors(opt =>
+                opt.AddPolicy("CorsPolicy", builder=>
+                    builder.AllowAnyMethod()
+                        .AllowAnyHeader()
+                        .WithOrigins("http://localhost:3000")
+                        .AllowCredentials()
+                ));
+
             services.AddSignalR();
+
             
         }
 
@@ -53,6 +63,8 @@ namespace QandA
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors("CorsPolicy");
 
             app.UseHttpsRedirection();
 
